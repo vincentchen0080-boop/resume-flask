@@ -1,66 +1,56 @@
 body {
     margin: 0;
-    font-family: Arial, "Microsoft YaHei";
-    background: radial-gradient(circle at top, #1a1f2e, #0b0f1a);
-    color: #e6e6e6;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
 }
 
-/* 整体容器 */
+/* 居中容器 */
 .container {
-    width: 850px;
-    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* 卡片 */
+/* 玻璃卡片 */
 .card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 25px;
-    margin-bottom: 18px;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
+    width: 700px;
+    padding: 40px;
+    border-radius: 20px;
 
-    /* 发光效果 */
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
-    
-    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
 }
 
-/* 悬停发光 */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.25);
+/* 名字 */
+.name {
+    font-size: 36px;
+    margin-bottom: 5px;
 }
 
 /* 标题 */
-h1 {
-    font-size: 40px;
-    background: linear-gradient(90deg, #00ffe1, #6a5cff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.title {
+    color: #a5b4fc;
+    margin-bottom: 30px;
 }
 
-h2 {
-    color: #00ffe1;
+/* 分区 */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    border-left: 4px solid #60a5fa;
+    padding-left: 10px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-h3 {
-    color: #ffffff;
-}
-
-/* 小字 */
+/* 文字 */
 p {
-    color: #cfcfcf;
     line-height: 1.6;
-}
-
-/* 列表 */
-ul {
-    color: #cfcfcf;
-}
-
-/* 顶部信息 */
-.container > p {
-    color: #aaa;
+    color: #e5e7eb;
 }
