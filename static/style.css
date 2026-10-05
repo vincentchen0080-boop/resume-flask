@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, "Microsoft YaHei";
+    background: radial-gradient(circle at top, #1a1f2e, #0b0f1a);
+    color: #e6e6e6;
+}
+
+/* 整体容器 */
+.container {
+    width: 850px;
+    margin: 50px auto;
+}
+
+/* 卡片 */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+
+    /* 发光效果 */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+    
+    transition: all 0.3s ease;
+}
+
+/* 悬停发光 */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.25);
+}
+
+/* 标题 */
+h1 {
+    font-size: 40px;
+    background: linear-gradient(90deg, #00ffe1, #6a5cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    color: #00ffe1;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+/* 小字 */
+p {
+    color: #cfcfcf;
+    line-height: 1.6;
+}
+
+/* 列表 */
+ul {
+    color: #cfcfcf;
+}
+
+/* 顶部信息 */
+.container > p {
+    color: #aaa;
+}
